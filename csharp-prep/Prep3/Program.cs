@@ -10,7 +10,7 @@ class Program
         // int number = int.Parse(n);
 
         Random randomGenerator = new Random();
-        int number = randomGenerator.Next(1,11);
+        int number = randomGenerator.Next(1,100);
 
         int guess;
 
