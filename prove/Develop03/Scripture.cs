@@ -4,7 +4,7 @@ public class Scripture{
 
     public Scripture(Reference Reference, string text){
         _reference = Reference;
-        _words= text.Split();
+        
 
     }
     
