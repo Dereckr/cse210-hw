@@ -13,13 +13,16 @@ class Program
         
         if (selection=="1"){
             Reference myReference1 = new Reference("Ether", 12, 27);
-            Word myword = new Word("And if men come unto me I will show unto them their weakness. I give unto men weakness that they may be humble; and my grace is sufficient for all men that humble themselves before me; for if they humble themselves before me, and have faith in me, then will I make weak things become strong unto them.");
+            Word myword1 = new Word("And if men come unto me I will show unto them their weakness. I give unto men weakness that they may be humble; and my grace is sufficient for all men that humble themselves before me; for if they humble themselves before me, and have faith in me, then will I make weak things become strong unto them.");
 
         }
         else if(selection=="2"){
             Reference myReference2 = new Reference("Moroni",10, 5,6);
-            Word myword = new Word("And by the power of the Holy Ghost ye may aknow the truth of all things. And whatsoever thing is good is just and true; wherefore, nothing that is good denieth the Christ, but acknowledgeth that he is.");
+            Word myword2 = new Word("And by the power of the Holy Ghost ye may aknow the truth of all things. And whatsoever thing is good is just and true; wherefore, nothing that is good denieth the Christ, but acknowledgeth that he is.");
+            
         }
+
+
 
     }
 }

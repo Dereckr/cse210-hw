@@ -6,6 +6,8 @@ public Word(string text){
 _text = text;
 }
 
+
+
 private void Hide(){
 
 }
