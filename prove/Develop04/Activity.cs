@@ -18,7 +18,7 @@ protected  int _duration;
 
    public void DisplayEndingMessage(string activityName, int  duration)
   {
-    Console.WriteLine("Welldone!!!");
+    Console.WriteLine("Well done!!!");
     Console.WriteLine($"You have completed another {duration} seconds of the  {activityName} Activity. ");
  }
   public void ShowSpinner(int seconds){
@@ -50,9 +50,6 @@ protected  int _duration;
             i=0;
         }
     }
-
-
-    Thread.Sleep(3000);
   }
 
   public void ShowCountDown(int seconds){

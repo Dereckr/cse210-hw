@@ -15,8 +15,6 @@ public BreathingActivity(){
         Console.WriteLine("Get Ready...");
             ShowSpinner(2);
 
-        int i = 0;
-
          while (DateTime.Now < endTime)
         {
             Console.WriteLine("Breath in..."); ShowCountDown(5);
@@ -24,7 +22,8 @@ public BreathingActivity(){
         }
 
         DisplayEndingMessage(_name,_duration);
-        ShowSpinner(2);
+        ShowSpinner(3);
+        Console.Clear();
 
     }
 }
