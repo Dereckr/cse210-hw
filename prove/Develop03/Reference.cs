@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 public class Reference{
     private string _book = "";
     private int _chapter;

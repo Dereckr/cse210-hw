@@ -1,24 +1,43 @@
+using System;
+using System.Runtime.CompilerServices;
+using System.Collections.Generic;
 public class Word {
-string _text ="";
-bool _isHidden;
+private string _text ="";
+private bool _isHidden;
 
 public Word(string text){
 _text = text;
+_isHidden = false;
 }
 
 
 
-private void Hide(){
+public void Hide(){
+ _isHidden = true;
 
 }
 
-private void Show(){
-
+public void Show(){
+ _isHidden = false;
 }
 
-public string GetDisplayText(){
-return _text;
+public bool IsHidden(){
+   
+    return false;
+}
 
+
+public void GetDisplayText(){
+    if (_isHidden == false){
+        Console.Write($"{_text}");
+    }
+    else if (_isHidden == true){
+        string word= _text.ToString();
+        int numberletter = word.Length;
+        for (int i=0;i<numberletter;i++)
+        Console.Write("_");
+    }
+    Console.Write(" ");
 }
 
 }
