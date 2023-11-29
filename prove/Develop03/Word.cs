@@ -23,7 +23,7 @@ public void Show(){
 
 public bool IsHidden(){
    
-    return false;
+    return _isHidden;
 }
 
 

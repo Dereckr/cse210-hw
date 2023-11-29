@@ -22,7 +22,7 @@ class Program
              selection1 = Console.ReadLine();
             scripture.HideRandomWords();
              Console.Clear();
-             } while (selection1 != "quit");
+             } while (selection1 != "quit" || scripture.IsCompletetlyHidden() == true);
            
 
         }
@@ -36,7 +36,7 @@ class Program
              selection1 = Console.ReadLine();
              scripture.HideRandomWords();
              Console.Clear();
-             } while (selection1 != "quit");
+             } while (selection1 != "quit" || scripture.IsCompletetlyHidden() == true);
            
 
         

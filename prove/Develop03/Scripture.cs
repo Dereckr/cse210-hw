@@ -20,7 +20,7 @@ public class Scripture
     }
     public void HideRandomWords() 
     {   
-        string contain = "_";
+        
         for (int i =0;i<4;i++) 
         {
         Random randomGenerator = new Random();
@@ -40,8 +40,13 @@ public class Scripture
     }
 
     public bool IsCompletetlyHidden(){
-        
-        return false;
+        foreach (Word word in _words) {
+            do {
+            
+                return false;
+            } while (word.IsHidden()==false);
+        }
+        return true;
     }
    
 }
