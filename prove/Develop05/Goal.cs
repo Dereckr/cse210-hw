@@ -14,6 +14,17 @@ public class Goal
         _points = points;
     }
 
+    public virtual string GetDetailsString()
+    {
+        string details = $"[] {_shortName} ({_description})";
+        return details;
+    }
+
+    // public abstract bool IsComplete();
+    // public abstract string GetStringRepresentation();
+    // public abstract void RecordEvent();
+   
+
 
 
 

@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 
 public class GoalManager 
 {
+    List<Goal> _goals = new List<Goal>();
+    private int _score;
     
     public void Start(){
         string selection;
@@ -27,7 +29,7 @@ public class GoalManager
 
             else if (selection == "2")
             {
-
+                
             }
 
             else if (selection == "3")
@@ -92,8 +94,10 @@ public class GoalManager
             Console.Write("What is the bonus for accomplishing it that many times? ");
             int bonus = int.Parse(Console.ReadLine());
             ChecklistGoal checklist = new ChecklistGoal(name, description, points, target, bonus);
-
         }
+
+
+    
 
 
 

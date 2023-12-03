@@ -7,5 +7,8 @@ public class SimpleGoal : Goal
         _shortName = name;
         _description = description;
         _points = points;
-    } 
+    }
+
+    
+
 }
