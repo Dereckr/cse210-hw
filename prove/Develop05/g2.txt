@@ -1,0 +1,4 @@
+0
+SimpleGoal:food~~eat less food~~50~~False
+EternalGoal:pray~~pray everyday~~30
+ChecklistGoal:homework~~do homework 3 times a week~~30~~100~~3~~0

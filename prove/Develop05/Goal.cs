@@ -16,13 +16,36 @@ public class Goal
 
     public virtual string GetDetailsString()
     {
-        string details = $"[] {_shortName} ({_description})";
+        if (IsComplete()==false){
+        string details = $"[ ] {_shortName} ({_description})";
         return details;
+        }
+        else
+        {
+            string details = $"[X] {_shortName} ({_description})";
+            return details;
+        }
     }
 
-    // public abstract bool IsComplete();
-    // public abstract string GetStringRepresentation();
-    // public abstract void RecordEvent();
+    public virtual bool IsComplete()
+    {
+        return false;
+    }
+    public virtual string GetStringRepresentation()
+    {
+        string rep = $"";
+        return rep;
+    }
+   
+    public virtual void RecordEventC()
+    {
+        
+    }
+
+    public string GetName(){
+        string name = $"{_shortName}";
+        return name;
+    }
    
 
 
