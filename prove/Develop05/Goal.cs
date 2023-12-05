@@ -1,7 +1,7 @@
 using System;
 using System.Data.SqlTypes;
 
-public class Goal
+public abstract class Goal
 {
     protected string _shortName;
     protected string _description;
@@ -37,10 +37,8 @@ public class Goal
         return rep;
     }
    
-    public virtual void RecordEventC()
-    {
-        
-    }
+    public abstract int RecordEventC();
+    
 
     public string GetName(){
         string name = $"{_shortName}";

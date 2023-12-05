@@ -15,12 +15,11 @@ public class EternalGoal : Goal
         return rep;
     }
 
-    public override void RecordEventC()
+    public override int RecordEventC()
     {
         Console.WriteLine($"Congratulations! You have earned {_points} points!");
-        GoalManager goalscore = new GoalManager();
-        Console.WriteLine($"You now have {goalscore.SetScore(_points)}");
-        Console.WriteLine("");
+        
+        return _points;
 
     }
 

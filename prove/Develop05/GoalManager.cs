@@ -188,7 +188,9 @@ public class GoalManager
         }
         Console.Write("Which goal did you accomplish? Please insert a number being 1 the first option: ");
         string option = Console.ReadLine();
-        _goals[int.Parse(option)-1].RecordEventC();
+        _score+=_goals[int.Parse(option)-1].RecordEventC();
+        Console.WriteLine($"Your total score is {_score}");
+        Console.WriteLine();
     }
 
     public int SetScore(int points)
@@ -197,10 +199,6 @@ public class GoalManager
         return _score;
     }
 
-    public void DisplayPlayerScore()
-    {
-        Console.WriteLine($"You have {_score} points");
-    }
-
+   
     
 }

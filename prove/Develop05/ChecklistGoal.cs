@@ -48,20 +48,18 @@ public class ChecklistGoal : Goal
             }
         }
 
-        public override void RecordEventC()
-    {
+        public override int RecordEventC()
+        {
         _amountCompleted+=1;
         if (_amountCompleted == _target)
-        {
-            _points = _bonus + _points;
-        }
+            {
+                _points = _bonus + _points;
+            }
         Console.WriteLine($"Congratulations! You have earned {_points} points!");
-        
-        GoalManager goalscore = new GoalManager();
-        Console.WriteLine($"You now have {goalscore.SetScore(_points)}");
         Console.WriteLine("");
+        return _points;
 
-    }
+        }
 
 }
 

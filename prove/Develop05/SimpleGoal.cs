@@ -30,14 +30,12 @@ public class SimpleGoal : Goal
             }
         }
 
-    public override void RecordEventC()
+    public override int RecordEventC()
     {
         Console.WriteLine($"Congratulations! You have earned {_points} points!");
         _IsComplete = true;
-        GoalManager goalscore = new GoalManager();
-        Console.WriteLine($"You now have {goalscore.SetScore(_points)}");
-        Console.WriteLine("");
-
+        int points = _points;
+        return points;
     }
 
 
