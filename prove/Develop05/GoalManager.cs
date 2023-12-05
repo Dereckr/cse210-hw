@@ -190,7 +190,7 @@ public class GoalManager
         string option = Console.ReadLine();
         _score+=_goals[int.Parse(option)-1].RecordEventC();
         Console.WriteLine($"Your total score is {_score}");
-        Console.WriteLine();
+        Console.WriteLine("");
     }
 
     public int SetScore(int points)
@@ -199,6 +199,10 @@ public class GoalManager
         return _score;
     }
 
-   
+    public void DisplayPlayerScore()
+    {
+        Console.WriteLine($"You have {_score} points");
+    }
+
     
 }
